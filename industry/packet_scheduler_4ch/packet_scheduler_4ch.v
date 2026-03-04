@@ -11,7 +11,7 @@ module packet_scheduler_4ch #(parameter N = 4, parameter WIDTH = 8) (
     integer i;
     reg found;
     always @(posedge clk or negedge rst_n)
-        if (!rst_n) begin
+        if (!rst_n) /* synchronous assert, async deassert */ begin
             rr_ptr <= 0; valid_out <= 0; data_out <= 0; sel_out <= 0;
         end else begin
             valid_out <= 0; found = 0;
