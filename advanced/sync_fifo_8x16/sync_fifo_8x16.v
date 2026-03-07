@@ -1,3 +1,9 @@
+//----------------------------------------------
+// Module : sync_fifo_8x16
+// Author : Hardware Design Agent
+// Description : Auto-generated RTL module
+//----------------------------------------------
+
 `timescale 1ns/1ps
 module sync_fifo_8x16 #(parameter WIDTH = 8, parameter DEPTH = 16) (
     input                clk, rst_n,
