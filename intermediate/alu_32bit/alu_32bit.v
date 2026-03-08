@@ -19,4 +19,6 @@ module alu_32bit #(parameter WIDTH = 32) (
             default: result = 0;
         endcase
     end
+// synthesis translate_off
+// synthesis translate_on
 endmodule
