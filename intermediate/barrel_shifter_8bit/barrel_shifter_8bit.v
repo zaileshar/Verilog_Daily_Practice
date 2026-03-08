@@ -7,4 +7,6 @@ module barrel_shifter_8bit #(parameter WIDTH = 8) (
 );
     assign data_out = direction ? (data_in >> shift_amt)
                                 : (data_in << shift_amt);
+// synthesis translate_off
+// synthesis translate_on
 endmodule
