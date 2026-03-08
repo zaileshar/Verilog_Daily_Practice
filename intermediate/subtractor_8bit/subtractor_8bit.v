@@ -1,3 +1,9 @@
+//----------------------------------------------
+// Module : subtractor_8bit
+// Author : Hardware Design Agent
+// Description : Auto-generated RTL module
+//----------------------------------------------
+
 `default_nettype none
 `timescale 1ns/1ps
 module subtractor_8bit #(parameter WIDTH = 8) (
