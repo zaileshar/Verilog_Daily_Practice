@@ -1,3 +1,4 @@
+`default_nettype none
 //----------------------------------------------
 // Module : subtractor_8bit
 // Author : Hardware Design Agent
@@ -13,5 +14,7 @@ module subtractor_8bit #(parameter WIDTH = 8) (
 );
     assign {borrow, diff} = a - b;
 endmodule
+
+`default_nettype wire
 
 `default_nettype wire
