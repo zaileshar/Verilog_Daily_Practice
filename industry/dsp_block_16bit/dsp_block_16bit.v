@@ -1,3 +1,9 @@
+//----------------------------------------------
+// Module : dsp_block_16bit
+// Author : Hardware Design Agent
+// Description : Auto-generated RTL module
+//----------------------------------------------
+
 `timescale 1ns/1ps
 module dsp_block_16bit #(parameter WIDTH = 16) (
     input                        clk, rst_n, en,
