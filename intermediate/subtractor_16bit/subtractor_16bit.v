@@ -5,4 +5,6 @@ module subtractor_16bit #(parameter WIDTH = 16) (
     output             borrow
 );
     assign {borrow, diff} = a - b;
+// synthesis translate_off
+// synthesis translate_on
 endmodule
