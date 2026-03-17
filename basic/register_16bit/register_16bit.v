@@ -1,3 +1,9 @@
+//----------------------------------------------
+// Module : register_16bit
+// Author : Hardware Design Agent
+// Description : Auto-generated RTL module
+//----------------------------------------------
+
 `timescale 1ns/1ps
 module register_16bit #(parameter WIDTH = 16, parameter DEPTH = 8) (
     input                    clk, rst_n, wr_en,
