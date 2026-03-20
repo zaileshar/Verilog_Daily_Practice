@@ -1,3 +1,4 @@
+`default_nettype none
 `timescale 1ns/1ps
 module mux_4to1_8bit #(parameter WIDTH = 8) (
     input  [WIDTH-1:0] in0, in1, in2, in3,
@@ -13,3 +14,5 @@ module mux_4to1_8bit #(parameter WIDTH = 8) (
         endcase
     end
 endmodule
+
+`default_nettype wire
