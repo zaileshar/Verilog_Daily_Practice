@@ -1,3 +1,4 @@
+`default_nettype none
 `timescale 1ns/1ps
 module counter_up_4bit #(parameter WIDTH = 4) (
     input                clk, rst_n, en,
@@ -7,3 +8,5 @@ module counter_up_4bit #(parameter WIDTH = 4) (
         if (!rst_n)   count <= 0;
         else if (en)  count <= count + 1;
 endmodule
+
+`default_nettype wire
