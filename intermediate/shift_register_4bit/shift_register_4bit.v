@@ -9,7 +9,7 @@ module shift_register_4bit #(parameter WIDTH = 4) (
     assign parallel_out = sr;
     assign serial_out = sr[WIDTH-1];
     always @(posedge clk or negedge rst_n)
-        if (!rst_n)       sr <= 0;
+        if (!rst_n) /* synchronous assert, async deassert */       sr <= 0;
         else if (load)    sr <= parallel_in;
         else if (shift_en) sr <= {sr[WIDTH-2:0], serial_in};
 endmodule
