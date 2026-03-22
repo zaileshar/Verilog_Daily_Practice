@@ -1,3 +1,9 @@
+//----------------------------------------------
+// Module : clock_divider_by4
+// Author : Hardware Design Agent
+// Description : Auto-generated RTL module
+//----------------------------------------------
+
 `timescale 1ns/1ps
 module clock_divider_by4 #(parameter DIV = 4) (
     input      clk_in, rst_n,
