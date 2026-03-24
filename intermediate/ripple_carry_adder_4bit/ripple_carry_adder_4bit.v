@@ -6,4 +6,6 @@ module ripple_carry_adder_4bit #(parameter WIDTH = 4) (
     output             cout
 );
     assign {cout, sum} = a + b + cin;
+// synthesis translate_off
+// synthesis translate_on
 endmodule
