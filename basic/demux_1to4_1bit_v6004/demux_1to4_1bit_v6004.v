@@ -13,4 +13,6 @@ module demux_1to4_1bit #(parameter WIDTH = 1) (
             2'b11: y3 = data_in;
         endcase
     end
+// synthesis translate_off
+// synthesis translate_on
 endmodule
