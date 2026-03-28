@@ -1,3 +1,4 @@
+`default_nettype none
 `timescale 1ns/1ps
 module parity_gen_16bit #(parameter WIDTH = 16) (
     input  [WIDTH-1:0] data,
@@ -7,3 +8,5 @@ module parity_gen_16bit #(parameter WIDTH = 16) (
     assign even_parity = ^data;
     assign odd_parity  = ~even_parity;
 endmodule
+
+`default_nettype wire
