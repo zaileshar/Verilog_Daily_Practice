@@ -1,3 +1,9 @@
+//----------------------------------------------
+// Module : counter_up_4bit
+// Author : Hardware Design Agent
+// Description : Auto-generated RTL module
+//----------------------------------------------
+
 `timescale 1ns/1ps
 module counter_up_4bit #(parameter WIDTH = 4) (
     input                clk, rst_n, en,
