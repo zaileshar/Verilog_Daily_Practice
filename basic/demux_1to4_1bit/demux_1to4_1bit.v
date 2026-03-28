@@ -1,3 +1,4 @@
+`default_nettype none
 `timescale 1ns/1ps
 module demux_1to4_1bit #(parameter WIDTH = 1) (
     input  [WIDTH-1:0] data_in,
@@ -14,3 +15,5 @@ module demux_1to4_1bit #(parameter WIDTH = 1) (
         endcase
     end
 endmodule
+
+`default_nettype wire
